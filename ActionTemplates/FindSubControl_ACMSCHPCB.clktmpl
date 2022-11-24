@@ -1,0 +1,122 @@
+[Actions]
+Count=5
+Version=2
+
+[Action_0]
+ActionName=Call Find SubControl ACMSCHPCB, unselected
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMSCHPCB.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_WindowText$$TextToFind_BG$=$Color_Window$$TextFeatures$=unselected
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_1]
+ActionName=Call Find SubControl ACMSCHPCB, selected, focused - active caption
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=0
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMSCHPCB.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_Window$$TextToFind_BG$=$Color_ActiveCaption$$TextFeatures$=selected, focused
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_2]
+ActionName=Call Find SubControl ACMSCHPCB, selected, unfocused
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=0
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMSCHPCB.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_WindowText$$TextToFind_BG$=$Color_BtnFace$$TextFeatures$=selected, unfocused
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_3]
+ActionName=Call Find SubControl ACMSCHPCB, selected, focused - highlight
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=0
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMSCHPCB.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_Window$$TextToFind_BG$=$Color_Highlight$$TextFeatures$=selected, focused
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_4]
+ActionName=Fail if not found
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=
+ListOfCustomVarsAndValues=
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Notes]
+Content=
+

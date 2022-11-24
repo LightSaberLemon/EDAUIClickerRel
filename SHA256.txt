@@ -1,0 +1,4 @@
+EDAUIClicker.exe                         a05e0bf7dbbde21fbfd23569ae3ee5ffb93277d403f2178dd968545f01366af2
+EDAUIClicker64.exe                       6e1a64bca306f0fde0f31950649e6d3c197beb6e649b7e603d6f93bdf756c9d3
+Plugins\AltUIClicker\AltUIClicker.dll    45f697443d6ebbf38861cb648ed1198aaaf3085656ca93dd3dc75d6dd5c94e35
+Plugins\AltUIClicker\AltUIClicker64.dll  0ed655bb706f6e8b18f2061c3162a271cb06c11b2eecc635a6b9ef2698606fe7

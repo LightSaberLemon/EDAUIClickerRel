@@ -1,0 +1,168 @@
+[Actions]
+Count=7
+Version=2
+
+[Action_0]
+ActionName=Fail template if $ProjectName$ not set
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=$ProjectName$==
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=
+ListOfCustomVarsAndValues=
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_1]
+ActionName=Call Find SubControl ACMProject, unselected
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMProject.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_WindowText$$TextToFind_BG$=$Color_Window$$TextFeatures$=unselected
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_2]
+ActionName=Call Find SubControl ACMProject, selected, focused - active caption
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMProject.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_Window$$TextToFind_BG$=$Color_ActiveCaption$$TextFeatures$=selected, focused
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_3]
+ActionName=Call Find SubControl ACMProject, selected, unfocused - active caption
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMProject.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_WindowText$$TextToFind_BG$=$Color_ActiveCaption$$TextFeatures$=selected, focused
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_4]
+ActionName=Call Find SubControl ACMProject, selected, unfocused
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMProject.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_WindowText$$TextToFind_BG$=$Color_BtnFace$$TextFeatures$=selected, unfocused
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_5]
+ActionName=Call Find SubControl ACMProject, selected, focused - highlight
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=FindGenericSubControl_ACMProject.clktmpl
+ListOfCustomVarsAndValues=$TextToFind_FG$=$Color_Window$$TextToFind_BG$=$Color_Highlight$$TextFeatures$=selected, focused
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Action_6]
+ActionName=Fail if not found
+Action=CallTemplate
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=$LastAction_Status$==Allowed Failed
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+TemplateFileName=
+ListOfCustomVarsAndValues=
+CallOnlyIfCondition=0
+CallOnlyIfConditionVarName=
+CallOnlyIfConditionVarValue=
+EvaluateBeforeCalling=0
+Loop.Enabled=0
+Loop.Counter=
+Loop.InitValue=
+Loop.EndValue=
+Loop.Direction=0
+Loop.BreakCondition=
+Loop.EvalBreakPosition=0
+
+[Notes]
+Content=
+
