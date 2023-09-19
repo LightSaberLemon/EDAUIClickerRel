@@ -1,4 +1,4 @@
-EDAUIClicker.exe                         a05e0bf7dbbde21fbfd23569ae3ee5ffb93277d403f2178dd968545f01366af2
-EDAUIClicker64.exe                       6e1a64bca306f0fde0f31950649e6d3c197beb6e649b7e603d6f93bdf756c9d3
+EDAUIClicker.exe                         13213a5f087d0838becc3a1aacb08c646cc29e81de3a860726f652ef2e6f3323
+EDAUIClicker64.exe                       96d348871b4d897bbfd21d3812f1587fe30530eb747e3ba3ff95e30f86da7aa5
 Plugins\AltUIClicker\AltUIClicker.dll    45f697443d6ebbf38861cb648ed1198aaaf3085656ca93dd3dc75d6dd5c94e35
 Plugins\AltUIClicker\AltUIClicker64.dll  0ed655bb706f6e8b18f2061c3162a271cb06c11b2eecc635a6b9ef2698606fe7
