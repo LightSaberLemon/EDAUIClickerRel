@@ -1,11 +1,11 @@
 [Actions]
-Count=16
+Count=17
 Version=2
 
 [Action_0]
 ActionName=Find PCB Printout window
 Action=FindControl
-ActionTimeout=1000
+ActionTimeout=10000
 ActionEnabled=1
 ActionCondition=
 BreakpointExists=0
@@ -15,6 +15,7 @@ MatchCriteria.WillMatchText=1
 MatchCriteria.WillMatchClassName=1
 MatchCriteria.WillMatchBitmapText=0
 MatchCriteria.WillMatchBitmapFiles=0
+MatchCriteria.WillMatchPrimitiveFiles=0
 MatchCriteria.SearchForControlMode=0
 MatchText=PCB Printout Properties
 MatchClassName=TWMPCBPrintPropertiesForm
@@ -40,6 +41,7 @@ MatchBitmapText[0].CropLeft=
 MatchBitmapText[0].CropTop=
 MatchBitmapText[0].CropRight=
 MatchBitmapText[0].CropBottom=
+MatchBitmapText[0].IgnoreBackgroundColor=0
 MatchBitmapFiles=
 ColorError=0
 AllowedColorErrorCount=0
@@ -48,20 +50,46 @@ MatchBitmapAlgorithm_Grid_XMultipleOf=1
 MatchBitmapAlgorithm_Grid_YMultipleOf=1
 MatchBitmapAlgorithm_Grid_XOffset=0
 MatchBitmapAlgorithm_Grid_YOffset=0
-InitialRectange.Left=$Control_Left$
-InitialRectange.Top=$Control_Top$
-InitialRectange.Right=$Control_Right$
-InitialRectange.Bottom=$Control_Bottom$
+InitialRectangle.Left=$Control_Left$
+InitialRectangle.Top=$Control_Top$
+InitialRectangle.Right=$Control_Right$
+InitialRectangle.Bottom=$Control_Bottom$
 UseWholeScreen=1
-InitialRectange.LeftOffset=0
-InitialRectange.TopOffset=0
-InitialRectange.RightOffset=0
-InitialRectange.BottomOffset=0
+InitialRectangle.LeftOffset=0
+InitialRectangle.TopOffset=0
+InitialRectangle.RightOffset=0
+InitialRectangle.BottomOffset=0
 StartSearchingWithCachedControl=0
 CachedControlLeft=
 CachedControlTop=
+MatchPrimitiveFiles=
+GetAllControls=0
+UseFastSearch=1
+FastSearchAllowedColorErrorCount=10
+IgnoredColors=
+SleepySearch=0
+StopSearchOnMismatch=1
+ImageSource=0
+SourceFileName=
+ImageSourceFileNameLocation=1
+PrecisionTimeout=0
+FullBackgroundImageInResult=1
+MatchByHistogramSettings.MinPercentColorMatch=50
+MatchByHistogramSettings.MostSignificantColorCountInSubBmp=10
+MatchByHistogramSettings.MostSignificantColorCountInBackgroundBmp=15
 
 [Action_1]
+ActionName=wait for animation
+Action=Sleep
+ActionTimeout=0
+ActionEnabled=1
+ActionCondition=
+BreakpointExists=0
+BreakpointEnabled=0
+BreakpointCondition=
+Value=1500
+
+[Action_2]
 ActionName=Move window
 Action=WindowOperations
 ActionTimeout=0
@@ -75,10 +103,10 @@ NewX=70
 NewY=70
 NewWidth=
 NewHeight=
-NewPositionEabled=1
-NewSizeEabled=0
+NewPositionEnabled=1
+NewSizeEnabled=0
 
-[Action_2]
+[Action_3]
 ActionName=Find PCB Printout window
 Action=FindControl
 ActionTimeout=1000
@@ -91,6 +119,7 @@ MatchCriteria.WillMatchText=1
 MatchCriteria.WillMatchClassName=1
 MatchCriteria.WillMatchBitmapText=0
 MatchCriteria.WillMatchBitmapFiles=0
+MatchCriteria.WillMatchPrimitiveFiles=0
 MatchCriteria.SearchForControlMode=0
 MatchText=PCB Printout Properties
 MatchClassName=TWMPCBPrintPropertiesForm
@@ -116,6 +145,7 @@ MatchBitmapText[0].CropLeft=
 MatchBitmapText[0].CropTop=
 MatchBitmapText[0].CropRight=
 MatchBitmapText[0].CropBottom=
+MatchBitmapText[0].IgnoreBackgroundColor=0
 MatchBitmapFiles=
 ColorError=0
 AllowedColorErrorCount=0
@@ -124,20 +154,35 @@ MatchBitmapAlgorithm_Grid_XMultipleOf=1
 MatchBitmapAlgorithm_Grid_YMultipleOf=1
 MatchBitmapAlgorithm_Grid_XOffset=0
 MatchBitmapAlgorithm_Grid_YOffset=0
-InitialRectange.Left=$Control_Left$
-InitialRectange.Top=$Control_Top$
-InitialRectange.Right=$Control_Right$
-InitialRectange.Bottom=$Control_Bottom$
+InitialRectangle.Left=$Control_Left$
+InitialRectangle.Top=$Control_Top$
+InitialRectangle.Right=$Control_Right$
+InitialRectangle.Bottom=$Control_Bottom$
 UseWholeScreen=1
-InitialRectange.LeftOffset=0
-InitialRectange.TopOffset=0
-InitialRectange.RightOffset=0
-InitialRectange.BottomOffset=0
+InitialRectangle.LeftOffset=0
+InitialRectangle.TopOffset=0
+InitialRectangle.RightOffset=0
+InitialRectangle.BottomOffset=0
 StartSearchingWithCachedControl=0
 CachedControlLeft=
 CachedControlTop=
+MatchPrimitiveFiles=
+GetAllControls=0
+UseFastSearch=1
+FastSearchAllowedColorErrorCount=10
+IgnoredColors=
+SleepySearch=0
+StopSearchOnMismatch=1
+ImageSource=0
+SourceFileName=
+ImageSourceFileNameLocation=1
+PrecisionTimeout=0
+FullBackgroundImageInResult=1
+MatchByHistogramSettings.MinPercentColorMatch=50
+MatchByHistogramSettings.MostSignificantColorCountInSubBmp=10
+MatchByHistogramSettings.MostSignificantColorCountInBackgroundBmp=15
 
-[Action_3]
+[Action_4]
 ActionName=VerifyIfHolesCheckBoxIsChecked
 Action=CallTemplate
 ActionTimeout=0
@@ -160,14 +205,14 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_4]
+[Action_5]
 ActionName=CheckOrUnCheckMirrorLayer
 Action=CallTemplate
 ActionTimeout=0
 ActionEnabled=1
 ActionCondition=
 BreakpointExists=0
-BreakpointEnabled=0
+BreakpointEnabled=1
 BreakpointCondition=
 TemplateFileName=CheckOrUnCheckMirrorLayer.clktmpl
 ListOfCustomVarsAndValues=
@@ -183,14 +228,14 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_5]
+[Action_6]
 ActionName=Add MultiLayer if not in list
 Action=CallTemplate
 ActionTimeout=0
 ActionEnabled=1
 ActionCondition=
 BreakpointExists=0
-BreakpointEnabled=1
+BreakpointEnabled=0
 BreakpointCondition=
 TemplateFileName=AddMultiLayerIfNotInList.clktmpl
 ListOfCustomVarsAndValues=
@@ -206,7 +251,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_6]
+[Action_7]
 ActionName=Remove Layers
 Action=CallTemplate
 ActionTimeout=0
@@ -229,7 +274,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_7]
+[Action_8]
 ActionName=Add Layer1
 Action=CallTemplate
 ActionTimeout=0
@@ -252,7 +297,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_8]
+[Action_9]
 ActionName=Add Layer2
 Action=CallTemplate
 ActionTimeout=0
@@ -275,7 +320,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_9]
+[Action_10]
 ActionName=Add Layer3
 Action=CallTemplate
 ActionTimeout=0
@@ -298,7 +343,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_10]
+[Action_11]
 ActionName=Add Layer4
 Action=CallTemplate
 ActionTimeout=0
@@ -321,7 +366,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_11]
+[Action_12]
 ActionName=Add Layer5
 Action=CallTemplate
 ActionTimeout=0
@@ -344,7 +389,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_12]
+[Action_13]
 ActionName=Add Layer6
 Action=CallTemplate
 ActionTimeout=0
@@ -367,7 +412,7 @@ Loop.Direction=0
 Loop.BreakCondition=
 Loop.EvalBreakPosition=0
 
-[Action_13]
+[Action_14]
 ActionName=Find Printout Prop Window
 Action=FindControl
 ActionTimeout=10000
@@ -380,6 +425,7 @@ MatchCriteria.WillMatchText=1
 MatchCriteria.WillMatchClassName=1
 MatchCriteria.WillMatchBitmapText=0
 MatchCriteria.WillMatchBitmapFiles=0
+MatchCriteria.WillMatchPrimitiveFiles=0
 MatchCriteria.SearchForControlMode=0
 MatchText=PCB Printout Properties
 MatchClassName=TWMPCBPrintPropertiesForm
@@ -405,6 +451,7 @@ MatchBitmapText[0].CropLeft=
 MatchBitmapText[0].CropTop=
 MatchBitmapText[0].CropRight=
 MatchBitmapText[0].CropBottom=
+MatchBitmapText[0].IgnoreBackgroundColor=0
 MatchBitmapFiles=
 ColorError=0
 AllowedColorErrorCount=0
@@ -413,20 +460,35 @@ MatchBitmapAlgorithm_Grid_XMultipleOf=1
 MatchBitmapAlgorithm_Grid_YMultipleOf=1
 MatchBitmapAlgorithm_Grid_XOffset=0
 MatchBitmapAlgorithm_Grid_YOffset=0
-InitialRectange.Left=$Control_Left$
-InitialRectange.Top=$Control_Top$
-InitialRectange.Right=$Control_Right$
-InitialRectange.Bottom=$Control_Bottom$
+InitialRectangle.Left=$Control_Left$
+InitialRectangle.Top=$Control_Top$
+InitialRectangle.Right=$Control_Right$
+InitialRectangle.Bottom=$Control_Bottom$
 UseWholeScreen=1
-InitialRectange.LeftOffset=0
-InitialRectange.TopOffset=0
-InitialRectange.RightOffset=0
-InitialRectange.BottomOffset=0
+InitialRectangle.LeftOffset=0
+InitialRectangle.TopOffset=0
+InitialRectangle.RightOffset=0
+InitialRectangle.BottomOffset=0
 StartSearchingWithCachedControl=0
 CachedControlLeft=
 CachedControlTop=
+MatchPrimitiveFiles=
+GetAllControls=0
+UseFastSearch=1
+FastSearchAllowedColorErrorCount=10
+IgnoredColors=
+SleepySearch=0
+StopSearchOnMismatch=1
+ImageSource=0
+SourceFileName=
+ImageSourceFileNameLocation=1
+PrecisionTimeout=0
+FullBackgroundImageInResult=1
+MatchByHistogramSettings.MinPercentColorMatch=50
+MatchByHistogramSettings.MostSignificantColorCountInSubBmp=10
+MatchByHistogramSettings.MostSignificantColorCountInBackgroundBmp=15
 
-[Action_14]
+[Action_15]
 ActionName=Find OK Button
 Action=FindControl
 ActionTimeout=1000
@@ -439,6 +501,7 @@ MatchCriteria.WillMatchText=1
 MatchCriteria.WillMatchClassName=1
 MatchCriteria.WillMatchBitmapText=0
 MatchCriteria.WillMatchBitmapFiles=0
+MatchCriteria.WillMatchPrimitiveFiles=0
 MatchCriteria.SearchForControlMode=0
 MatchText=OK
 MatchClassName=TXPBitBtn
@@ -464,6 +527,7 @@ MatchBitmapText[0].CropLeft=
 MatchBitmapText[0].CropTop=
 MatchBitmapText[0].CropRight=
 MatchBitmapText[0].CropBottom=
+MatchBitmapText[0].IgnoreBackgroundColor=0
 MatchBitmapFiles=
 ColorError=0
 AllowedColorErrorCount=0
@@ -472,20 +536,35 @@ MatchBitmapAlgorithm_Grid_XMultipleOf=1
 MatchBitmapAlgorithm_Grid_YMultipleOf=1
 MatchBitmapAlgorithm_Grid_XOffset=0
 MatchBitmapAlgorithm_Grid_YOffset=0
-InitialRectange.Left=$Control_Left$
-InitialRectange.Top=$Control_Bottom$
-InitialRectange.Right=$Control_Right$
-InitialRectange.Bottom=$Control_Bottom$
+InitialRectangle.Left=$Control_Left$
+InitialRectangle.Top=$Control_Bottom$
+InitialRectangle.Right=$Control_Right$
+InitialRectangle.Bottom=$Control_Bottom$
 UseWholeScreen=0
-InitialRectange.LeftOffset=200
-InitialRectange.TopOffset=-50
-InitialRectange.RightOffset=0
-InitialRectange.BottomOffset=0
+InitialRectangle.LeftOffset=200
+InitialRectangle.TopOffset=-50
+InitialRectangle.RightOffset=0
+InitialRectangle.BottomOffset=0
 StartSearchingWithCachedControl=0
 CachedControlLeft=
 CachedControlTop=
+MatchPrimitiveFiles=
+GetAllControls=0
+UseFastSearch=1
+FastSearchAllowedColorErrorCount=10
+IgnoredColors=
+SleepySearch=0
+StopSearchOnMismatch=1
+ImageSource=0
+SourceFileName=
+ImageSourceFileNameLocation=1
+PrecisionTimeout=0
+FullBackgroundImageInResult=1
+MatchByHistogramSettings.MinPercentColorMatch=50
+MatchByHistogramSettings.MostSignificantColorCountInSubBmp=10
+MatchByHistogramSettings.MostSignificantColorCountInBackgroundBmp=15
 
-[Action_15]
+[Action_16]
 ActionName=Confirm dialog
 Action=Click
 ActionTimeout=0
@@ -515,7 +594,13 @@ XClickPointVarDest=$Control_Left$
 YClickPointVarDest=$Control_Top$
 XOffsetDest=0
 YOffsetDest=0
+MouseWheelType=0
+MouseWheelAmount=0
+DelayAfterMovingToDestination=50
+DelayAfterMouseDown=100
+MoveDuration=-1
 
 [Notes]
 Content=
+TemplateIconPath=
 

@@ -31,7 +31,7 @@ Action=CallTemplate
 ActionTimeout=0
 ActionEnabled=1
 ActionCondition=$DebugVar_SubCnvYOffset$<>$LayerY$
-BreakpointExists=1
+BreakpointExists=0
 BreakpointEnabled=1
 BreakpointCondition=
 TemplateFileName=RemoveLayerAtPoint.clktmpl
@@ -50,4 +50,5 @@ Loop.EvalBreakPosition=0
 
 [Notes]
 Content=
+TemplateIconPath=
 
