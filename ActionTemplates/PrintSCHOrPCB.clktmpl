@@ -14,6 +14,7 @@ BreakpointCondition=
 ListOfVarNames=$PDFViewer$
 ListOfVarValues=C:\Program Files (x86)\Foxit Software\Foxit Reader\FoxitReader.exe
 ListOfVarEvalBefore=
+FailOnException=0
 
 [Action_1]
 ActionName=Set Printer to Foxit
@@ -27,6 +28,7 @@ BreakpointCondition=
 ListOfVarNames=$PrinterName$
 ListOfVarValues=Foxit Reader PDF Printer
 ListOfVarEvalBefore=
+FailOnException=0
 
 [Action_2]
 ActionName=Print SCH
@@ -109,6 +111,7 @@ BreakpointCondition=
 ListOfVarNames=$PrinterName$
 ListOfVarValues=Microsoft Print to PDF
 ListOfVarEvalBefore=
+FailOnException=0
 
 [Action_6]
 ActionName=Print PCB Top
@@ -388,4 +391,5 @@ Loop.EvalBreakPosition=0
 
 [Notes]
 Content=
+TemplateIconPath=
 

@@ -14,7 +14,9 @@ BreakpointCondition=
 ListOfVarNames=$CreateDirRes$
 ListOfVarValues=$CreateDir($FullPathProjectDir$\pdf)$
 ListOfVarEvalBefore=1
+FailOnException=0
 
 [Notes]
 Content=
+TemplateIconPath=
 
